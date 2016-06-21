@@ -1,0 +1,32 @@
+{
+    box-sizing: border-box;
+}
+.header {
+    border: 1px solid red;
+    padding: 15px;
+}
+.sub-header-text {
+    width: 25%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+.left-side {
+    width: 75%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+.right-side {
+    width: 75%;
+    float: right;
+    padding: 15px;
+    border: 1px solid red;
+}
+div.bar {
+        display: inline-block;
+        width: 20px;
+        height: 75px; /* Gets overriden by D3-assigned height below */
+        margin-right: 2px;
+        background-color: teal;
+      }

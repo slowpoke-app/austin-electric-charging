@@ -1,19 +1,12 @@
 <html> 
 
 <head> 
+	<script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+	<link rel="stylesheet" href="styles.css">
+<div class="header">
 <title>Austin Electric Charging Stations</title>
-<script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
-<style type="text/css">
-    
-      div.bar {
-        display: inline-block;
-        width: 20px;
-        height: 75px; /* Gets overriden by D3-assigned height below */
-        margin-right: 2px;
-        background-color: teal;
-      }
-    
-    </style>
+</div>
+
 </head>
 
 <body bgcolor="white" text="black">
@@ -23,7 +16,7 @@
 Find your nearest vehicle charging station!
 
 <p>There are __ electric charging stations in Austin, TX. We will grab the data from data.austintexas.gov using the API.</p>
-<p>The (initial) plan to do this is to construct a Python API call which requests the data on page load. Not sure exactly how to make get this to run on command, though.</P.
+<p>The (initial) plan to do this is to construct a Python API call which requests the data on page load. Not sure exactly how to make get this to run on command, though.</p>.
 
 <p>Here is a graph of vehicle charging stations, by customer category. This will eventually be rendered in D3.js.</p>
 
@@ -35,7 +28,11 @@ Find your nearest vehicle charging station!
 <script type="text/javascript">
 
     
+<<<<<<< HEAD
       var dataset = [ 5, 10, 15, 20, 25, 23, 5, 4];
+=======
+      var dataset = [ 5, 10, 15, 20, 25, 23, 5, 42, 30 ];
+>>>>>>> refs/remotes/origin/master
       
       d3.select("body").selectAll("div")
         .data(dataset)
