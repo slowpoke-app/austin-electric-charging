@@ -2,6 +2,18 @@
 
 <head> 
 <title>Austin Electric Charging Stations</title>
+<script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+<style type="text/css">
+    
+      div.bar {
+        display: inline-block;
+        width: 20px;
+        height: 75px; /* Gets overriden by D3-assigned height below */
+        margin-right: 2px;
+        background-color: teal;
+      }
+    
+    </style>
 </head>
 
 <body bgcolor="white" text="black">
@@ -19,6 +31,24 @@ Find your nearest vehicle charging station!
 
 <p>And here is a map of vehicle charging stations. This will become a D3.js map eventually.</p>
 <div><iframe width="500px" title="Electric Charging Stations - Point Map" height="425px" src="https://data.austintexas.gov/w/tcpw-uhfc/7r79-5ncn?cur=WyCYZS1nvZB&from=root" frameborder="0"scrolling="no"><a href="https://data.austintexas.gov/Utility/Electric-Charging-Stations-Point-Map/tcpw-uhfc" title="Electric Charging Stations - Point Map" target="_blank">Electric Charging Stations - Point Map</a></iframe></div>
+
+<script type="text/javascript">
+
+    
+      var dataset = [ 5, 10, 15, 20, 25, 234, 5, 42 ];
+      
+      d3.select("body").selectAll("div")
+        .data(dataset)
+        .enter()
+        .append("div")
+        .attr("class", "bar")
+        .style("height", function(d) {
+          var barHeight = d * 5;
+          return barHeight + "px";
+        });
+      
+    
+</script>
 
 </body>
 
