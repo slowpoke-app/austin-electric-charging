@@ -11,6 +11,9 @@
 </head>
 
 <body bgcolor="white" text="black">
+
+This is a D3 graph of random values. 
+<br /> 
 <script type="text/javascript">
     
       var dataset = [ 10, 5, 10, 15, 20, 25, 23, 5, 4];
@@ -24,10 +27,18 @@
           var barHeight = d * 5;
           return barHeight + "px";
         });
+<<<<<<< HEAD
       
+      d3.csv("/Users/joeluk/Desktop/austin-electric-charging", function(data) {
+=======
+      d3.csv("cities.csv", function(data) {
+>>>>>>> master
+  console.log(data[0]);
+});
     
 </script>
 
+<br /> 
 Find your nearest vehicle charging station!
 
 <p>There are __ electric charging stations in Austin, TX. We will grab the data from data.austintexas.gov using the API.</p>
