@@ -24,7 +24,9 @@
           var barHeight = d * 5;
           return barHeight + "px";
         });
-      
+      d3.csv("cities.csv", function(data) {
+  console.log(data[0]);
+});
     
 </script>
 
